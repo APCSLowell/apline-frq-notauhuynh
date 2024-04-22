@@ -13,6 +13,10 @@ public class APLine
     return (aHold * -1)/bHold;
   }
   public boolean isOnLine(int a, int b){
-    
+    int temp = (aHold*a) + (bHold*b) + cHold;
+    if(temp == 0){
+      return true;
+    }
+    return false;
   }
 }
